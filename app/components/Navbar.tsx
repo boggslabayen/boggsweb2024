@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { quickSand } from "./Fonts";
 
 import {
   Navbar,
@@ -24,99 +25,37 @@ export default function StickyNavbar() {
 
   return (
     <div className="-my-6 max-h-[768px] w-full py-4">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-8 py-6 lg:px-8 lg:py-4 bg-blue-jay">
-        <div className="flex items-center justify-between mx-2 md:mx-8">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-8 py-6 lg:px-8 lg:py-8 bg-blue-jay">
+        <div className="flex items-center justify-between">
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer font-medium border-double border-2 px-4 py-2"
+            className={`${quickSand.className} md:text-3xl cursor-pointer font-black text-black`}
           >
-            OSAPS 2024
+            Boggs Labayen
           </Typography>
 
           <div className="flex hidden md:block">
             <Link
-              href="/programs"
-              className="px-4 text-light-blue-100 hover:text-amber-900 text-md"
+              href="/"
+              className={`${quickSand.className}px-4 text-black hover:text-amber-900 text-lg font-normal hover:font-black md:pl-8`}
             >
-              Program / Speakers
+              About
             </Link>
-            <Link
-              href="/abstract"
-              className="px-4 text-light-blue-100 hover:text-amber-900 text-md"
-            >
-              Abstract
-            </Link>
-            <Link
-              href="/explore-cebu"
-              className="px-4 text-light-blue-100 hover:text-amber-900 text-md"
-            >
-              Explore
-            </Link>
-            <Link
-              href="/sponsorship"
-              className="px-4 text-light-blue-100 hover:text-amber-900 text-md"
-            >
-              Sponsors
-            </Link>
-            <Link
-              href="/masterclass"
-              className="px-4 text-light-blue-100 hover:text-amber-900 text-md"
-            >
-              Masterclass
-            </Link>
-          </div>
 
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-x-1">
-              <Link href="/register">
-                <Button
-                  variant="filled"
-                  size="md"
-                  className="hidden lg:inline-block rounded-full bg-amber-500 text-gray-800 font-bold"
-                >
-                  Register
-                </Button>
-              </Link>
-            </div>
-
-            <IconButton
-              variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-              ripple={false}
-              onClick={() => setOpenNav(!openNav)}
+            <Link
+              href="/"
+              className={`${quickSand.className}px-4 text-black hover:text-amber-900 text-lg font-normal hover:font-black md:pl-8`}
             >
-              {openNav ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  className="h-6 w-6"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
-            </IconButton>
+              Works
+            </Link>
+
+            <Link
+              href="/contact"
+              className={`${quickSand.className}px-4 text-black hover:text-amber-900 text-lg font-normal hover:font-black md:pl-8`}
+            >
+              Contact Me
+            </Link>
           </div>
         </div>
         <Collapse open={openNav}>
