@@ -57,7 +57,7 @@ export default function Home() {
 
           <div className="max-w-screen-md">
             <h3 className={`${quickSand.className} text-3xl font-bold pb-4`}>
-              Great you're still here!
+              Great you&apos;re still here!
             </h3>
 
             <p className={`${quickSand.className} text-lg leading-10 pb-4`}>
