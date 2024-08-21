@@ -38,7 +38,7 @@ function createWorkCards(workCards) {
   return (
     <div
       key={workCards.id}
-      className="border-solid border-2 border-slate-400 rounded-md hover:bg-red-200 "
+      className="rounded-lg shadow-md hover:border-solid hover:border-4 hover:border-red-300 mb-4"
     >
       <div>
         <Image
@@ -49,10 +49,10 @@ function createWorkCards(workCards) {
         />
       </div>
       <div className="p-4">
-        <h3 className={`${quickSand.className} text-xl font-bold pb-2`}>
+        <h3 className={`${quickSand.className} text-xl font-bold pb-1`}>
           {workCards.projectTitle}
         </h3>
-        <p className={`${quickSand.className} text-md font-bold pb-2`}>
+        <p className={`${quickSand.className} text-md font-normal pb-2`}>
           {workCards.projectDescription}
         </p>
       </div>
