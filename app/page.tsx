@@ -74,7 +74,7 @@ export default function Home() {
               after using the product. If you like to collaborate, feel free to
               contact me.
             </p>
-            <PrimaryButton name="More about me" href="/contact" />
+            <PrimaryButton name="More about me" href="/about" />
           </div>
 
           <div></div>

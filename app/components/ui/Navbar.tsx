@@ -27,37 +27,38 @@ export default function StickyNavbar() {
     <div className="-my-6 max-h-[768px] w-full py-4">
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-8 py-6 lg:px-8 lg:py-8 bg-blue-jay">
         <div className="flex items-center justify-between">
-          <Typography
-            as="a"
-            href="#"
-            className={`${quickSand.className} md:text-3xl cursor-pointer font-black text-black`}
-          >
-            Boggs Labayen
-          </Typography>
+          <Link href="/">
+            <h1
+              className={`${quickSand.className} font-bold md:text-3xl cursor-pointer text-black`}
+            >
+              Boggs Labayen
+            </h1>
+          </Link>
 
           <div className="flex hidden md:block">
             <Link
               href="/"
-              className={`${quickSand.className}px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
+              className={`${quickSand.className} px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
             >
               Works
             </Link>
 
             <Link
               href="/"
-              className={`${quickSand.className}px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
+              className={`${quickSand.className} px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
             >
               About
             </Link>
 
             <Link
               href="/contact"
-              className={`${quickSand.className}px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
+              className={`${quickSand.className} px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
             >
               Contact
             </Link>
           </div>
         </div>
+
         <Collapse open={openNav}>
           <div className="text-center">
             <Link
