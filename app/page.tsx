@@ -4,14 +4,15 @@ import { quickSand } from "./components/ui/Fonts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDown } from "@fortawesome/free-regular-svg-icons";
 import PrimaryButton from "./components/ui/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <div className="bg-blue-gray-300 max-w-screen py-16 md:py-24 px-8 md:px-32 justify-center">
+      <div className="max-w-screen py-16 md:py-24 px-8 md:px-32 place-items-center">
         <div className="pb-8">
           <h1
-            className={`${quickSand.className} max-w-screen-md text-2xl md:text-7xl font-light leading-tight`}
+            className={`${quickSand.className} max-w-screen text-2xl md:text-7xl font-light leading-tight text-center`}
           >
             Hello I&apos;m <span className="font-black">Boggs</span>, <br /> a
             product
@@ -21,7 +22,7 @@ export default function Home() {
 
         <div className="">
           <p
-            className={`${quickSand.className} max-w-screen-md text-lg md:text-3xl font-light leading-tight`}
+            className={`${quickSand.className} mx-auto md:max-w-screen-md text-xl md:text-3xl font-light leading-tight text-center`}
           >
             I help companies succeed through designing digital experiences that
             elevate human life.
@@ -30,21 +31,25 @@ export default function Home() {
 
         <div className="pt-16 justify-items-center">
           <div className="max-w-12 animate-bounce mx-auto">
-            <FontAwesomeIcon
-              icon={faCircleDown}
-              size="xs"
-              style={{ color: "#FFD43B" }}
-            />
+            <a href="#anchor_one">
+              <FontAwesomeIcon
+                icon={faCircleDown}
+                size="xs"
+                style={{ color: "#FFD43B" }}
+              />
+            </a>
           </div>
-          <p className="text-center">scroll down for more</p>
+          <p className={`${quickSand.className} text-center `}>
+            scroll down for more
+          </p>
         </div>
       </div>
 
-      <div className="py-16 md:px-32 px-8 place-content-center">
+      <div className="py-16 md:px-32 px-8 place-content-center" id="anchor_one">
         <WorkThumb />
       </div>
 
-      <div className="py-16 md:px-32 px-8 ">
+      <div className="py-16 md:px-32 px-8 py-24">
         <div className="flex-row md:flex gap-4 justify-center place-items-center">
           <div className="px-16 py-4 md:px-0 md:py-0">
             <Image

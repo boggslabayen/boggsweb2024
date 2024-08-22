@@ -38,23 +38,23 @@ export default function StickyNavbar() {
           <div className="flex hidden md:block">
             <Link
               href="/"
-              className={`${quickSand.className}px-4 text-black hover:text-amber-900 text-lg font-normal hover:font-black md:pl-8`}
-            >
-              About
-            </Link>
-
-            <Link
-              href="/"
-              className={`${quickSand.className}px-4 text-black hover:text-amber-900 text-lg font-normal hover:font-black md:pl-8`}
+              className={`${quickSand.className}px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
             >
               Works
             </Link>
 
             <Link
-              href="/contact"
-              className={`${quickSand.className}px-4 text-black hover:text-amber-900 text-lg font-normal hover:font-black md:pl-8`}
+              href="/"
+              className={`${quickSand.className}px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
             >
-              Contact Me
+              About
+            </Link>
+
+            <Link
+              href="/contact"
+              className={`${quickSand.className}px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
+            >
+              Contact
             </Link>
           </div>
         </div>
