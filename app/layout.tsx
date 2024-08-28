@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import StickyNavbar from "./components/ui/Navbar";
 import "./globals.css";
 import Footer from "./components/ui/Footer";
+import { quickSand } from "./components/ui/Fonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={quickSand.className}>
         <StickyNavbar />
         {children}
         <Footer />

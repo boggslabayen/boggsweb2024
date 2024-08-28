@@ -1,7 +1,7 @@
 import { quickSand } from "./Fonts";
 import Image from "next/image";
 
-const workCards = [
+const projectCards = [
   {
     id: 1,
     image: "/project_assets/hcapp.png",
@@ -42,15 +42,15 @@ const workCards = [
   },
 ];
 
-function createWorkCards(workCards) {
+function createProjectCards(projectCards) {
   return (
     <div
-      key={workCards.id}
+      key={projectCards.id}
       className="rounded-lg shadow-md hover:border-solid hover:border-4 hover:border-red-300 mb-4"
     >
       <div>
         <Image
-          src={workCards.image}
+          src={projectCards.image}
           alt={"project-image"}
           width={600}
           height={200}
@@ -58,10 +58,10 @@ function createWorkCards(workCards) {
       </div>
       <div className="p-4">
         <h3 className={`${quickSand.className} text-xl font-bold pb-1`}>
-          {workCards.projectTitle}
+          {projectCards.projectTitle}
         </h3>
         <p className={`${quickSand.className} text-md font-normal pb-2`}>
-          {workCards.projectDescription}
+          {projectCards.projectDescription}
         </p>
       </div>
     </div>
@@ -71,7 +71,7 @@ function createWorkCards(workCards) {
 export default function WorkThumb() {
   return (
     <div className="max-w-max md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mx-auto">
-      {workCards.map(createWorkCards)}
+      {projectCards.map(createProjectCards)}
     </div>
   );
 }
