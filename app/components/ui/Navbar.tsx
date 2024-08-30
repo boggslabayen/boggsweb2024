@@ -35,7 +35,7 @@ export default function StickyNavbar() {
             </h1>
           </Link>
 
-          <div className="flex hidden md:block">
+          <div className="flex md:block">
             <Link
               href="/"
               className={`${quickSand.className} px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}

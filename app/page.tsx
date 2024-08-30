@@ -49,7 +49,7 @@ export default function Home() {
         <WorkThumb />
       </div>
 
-      <div className="py-16 md:px-32 px-8 py-24">
+      <div className="py-16 md:px-32 px-8">
         <div className="flex-row md:flex gap-4 justify-center place-items-center">
           <div className="px-16 py-4 md:px-0 md:py-0">
             <Image
