@@ -2,6 +2,7 @@ import { quickSand } from "../components/ui/Fonts";
 import Resume from "../components/ui/Resume";
 import Education from "../components/ui/Education";
 import Image from "next/image";
+import { Button } from "@material-tailwind/react";
 
 export default function About() {
   return (
@@ -9,23 +10,34 @@ export default function About() {
       <div className="max-w-screen py-16 md:py-24 px-8 md:px-32">
         {/* Caption - Headlin */}
         <div className=" max-w-screen-lg mx-auto py-8">
-          <h1
-            className={`${quickSand.className} text-xl md:text-4xl font-light text-center leading-8
+          <div className="pb-8">
+            <h1
+              className={`${quickSand.className} text-xl md:text-4xl font-light text-center leading-8
             `}
-          >
-            Hey! <span className="font-bold">I&apos;m Jose</span>, a designer
-            obsessed in creating digital experiences that will make life
-            efficient.
-          </h1>
+            >
+              Hey! <span className="font-bold">I&apos;m Jose</span>, a designer
+              obsessed in creating digital experiences that will make life
+              efficient.
+            </h1>
+          </div>
+
+          <div className="mx-auto text-center">
+            <a href="/project_assets/2024_LabayenCV.pdf" target="_blank">
+              <button className="bg-black text-white px-8 py-4 rounded-full hover:bg-amber-500 hover:text-black font-bold">
+                Download CV
+              </button>
+            </a>
+          </div>
         </div>
 
         {/* Work Experience */}
+
         <div>
           <Resume />
         </div>
 
         {/* Education and Skills */}
-        <div className="max-w-screen-lg py-16 mx-auto flex justify-between">
+        <div className="max-w-screen-lg py-16 mx-auto md:flex justify-between">
           <div>
             <Education />
           </div>
@@ -45,9 +57,9 @@ export default function About() {
         </div>
 
         {/* Tools */}
-        <div className="max-w-screen-lg py-16 mx-auto flex justify-between">
+        <div className="max-w-screen-lg py-16 mx-auto md:flex justify-between">
           <div>
-            <h3 className="pb-8 font-bold text-lg">Tool Set</h3>
+            <h3 className="pb-4 font-bold text-lg">Tool Set</h3>
             <p>Tools I often use in research and design</p>
           </div>
 

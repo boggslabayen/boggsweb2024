@@ -31,7 +31,7 @@ const educCards = [
 
 function createEducCards(educCards) {
   return (
-    <div key={educCards.id} className="flex pb-8">
+    <div key={educCards.id} className="md:flex pb-8">
       <div className="w-24">
         <p>{educCards.year}</p>
       </div>
