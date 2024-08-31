@@ -26,14 +26,6 @@ const projectCards = [
   },
   {
     id: 4,
-    image: "/project_assets/axasol.png",
-    projectTitle: "AXA Philippines: AXA Solutions",
-    projectDescription:
-      "AXA Philippines' Financial Advisors' front-end sales solutions",
-    link: "/pasahero",
-  },
-  {
-    id: 5,
     image: "/project_assets/osaps.png",
     projectTitle: "OSAPS 2024",
     projectDescription:
@@ -41,7 +33,7 @@ const projectCards = [
     link: "/osaps",
   },
   {
-    id: 6,
+    id: 5,
     image: "/project_assets/roof.png",
     projectTitle: "The Roof",
     projectDescription: "Lounge brand building",
@@ -79,7 +71,7 @@ function createProjectCards(projectCards) {
 
 export default function WorkThumb() {
   return (
-    <div className="max-w-max md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mx-auto">
+    <div className="max-w-max md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mx-auto">
       {projectCards.map(createProjectCards)}
     </div>
   );

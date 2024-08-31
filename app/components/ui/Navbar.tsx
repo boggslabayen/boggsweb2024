@@ -1,19 +1,17 @@
 "use client";
 
-import * as React from "react";
-import Link from "next/link";
-import Image from "next/image";
 import { quickSand } from "./Fonts";
+import Link from "next/link";
 
+import React from "react";
 import {
   Navbar,
-  Collapse,
+  MobileNav,
   Typography,
-  Button,
   IconButton,
 } from "@material-tailwind/react";
 
-export default function StickyNavbar() {
+export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -23,89 +21,96 @@ export default function StickyNavbar() {
     );
   }, []);
 
+  const navList = (
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <Typography
+        as="li"
+        variant="large"
+        color="blue-gray"
+        className="p-1  font-medium hover:font-bold hover:text-amber-500"
+      >
+        <a href="/" className="flex items-center">
+          Works
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="large"
+        color="blue-gray"
+        className="p-1  font-medium hover:font-bold hover:text-amber-500"
+      >
+        <a href="/about" className="flex items-center">
+          Resume
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="large"
+        color="blue-gray"
+        className="p-1  font-medium hover:font-bold hover:text-amber-500"
+      >
+        <a href="#" className="flex items-center">
+          Contact
+        </a>
+      </Typography>
+    </ul>
+  );
+
   return (
-    <div className="-my-6 max-h-[768px] w-full py-4">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-8 py-6 lg:px-8 lg:py-8 bg-blue-jay">
-        <div className="flex items-center justify-between">
+    <div className="-m-6 min-w-screen overflow-scroll  bg-white">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none p-8 md:px-32 md:py-16">
+        <div className="flex items-center justify-between text-blue-gray-900">
           <Link href="/">
-            <h1
-              className={`${quickSand.className} font-bold md:text-3xl cursor-pointer text-black`}
+            <h3
+              className={`${quickSand.className} mr-4 cursor-pointer py-1.5 font-bold text-3xl`}
             >
-              Boggs Labayen
-            </h1>
+              Jose Labayen
+            </h3>
           </Link>
 
-          <div className="flex md:block">
-            <Link
-              href="/"
-              className={`${quickSand.className} px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
-            >
-              Works
-            </Link>
+          <div className="flex items-center gap-4">
+            <div className="mr-4 hidden lg:block">{navList}</div>
 
-            <Link
-              href="/about"
-              className={`${quickSand.className} px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
+            <IconButton
+              variant="text"
+              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              ripple={false}
+              onClick={() => setOpenNav(!openNav)}
             >
-              About
-            </Link>
-
-            <Link
-              href="/contact"
-              className={`${quickSand.className} px-4 text-black hover:text-amber-500 text-lg font-normal hover:font-black md:pl-8`}
-            >
-              Contact
-            </Link>
+              {openNav ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  className="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
+            </IconButton>
           </div>
         </div>
-
-        <Collapse open={openNav}>
-          <div className="text-center">
-            <Link
-              href="/programs"
-              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block"
-            >
-              Program / Speakers
-            </Link>
-            <Link
-              href="/abstract"
-              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block"
-            >
-              Abstract
-            </Link>
-            <Link
-              href="/explore-cebu"
-              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block"
-            >
-              Explore
-            </Link>
-            <Link
-              href="/sponsorship"
-              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block"
-            >
-              Sponsors
-            </Link>
-
-            <Link
-              href="/masterclass"
-              className="px-4 py-4 text-light-blue-100 hover:text-amber-900 text-md block"
-            >
-              Masterclass
-            </Link>
-          </div>
-
-          <div className="flex items-center gap-x-1 justify-center py-4">
-            <Link href="/register">
-              <Button
-                variant="filled"
-                size="lg"
-                className="rounded-full bg-amber-500 text-gray-800"
-              >
-                <span>Register Now</span>
-              </Button>
-            </Link>
-          </div>
-        </Collapse>
+        <MobileNav open={openNav}>{navList}</MobileNav>
       </Navbar>
     </div>
   );

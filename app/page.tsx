@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-16 md:px-32 px-8 place-content-center" id="anchor_one">
+      <div className="py-16 md:px-32 px-8" id="anchor_one">
         <WorkThumb />
       </div>
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import StickyNavbar from "./components/ui/Navbar";
+import { StickyNavbar } from "./components/ui/Navbar";
 import "./globals.css";
 import Footer from "./components/ui/Footer";
 import { quickSand } from "./components/ui/Fonts";
