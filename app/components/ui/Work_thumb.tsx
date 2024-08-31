@@ -45,7 +45,7 @@ const projectCards = [
     image: "/project_assets/roof.png",
     projectTitle: "The Roof",
     projectDescription: "Lounge brand building",
-    link: "/theroof",
+    link: "/roof",
   },
 ];
 

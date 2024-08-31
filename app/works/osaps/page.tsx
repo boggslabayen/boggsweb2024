@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-export default function Osaps() {
+export default function Roof() {
   return (
     <>
       {/* Header Image */}
       <div className="max-w-screen-xl mx-auto md:py-16 py-2 md:px-32">
         <Image
           src="/project_assets/osaps_assets/osaps_laptop.png"
-          alt="HC app on phone"
+          alt="OSAPS website on laptop"
           width={1250}
           height={833}
         />
