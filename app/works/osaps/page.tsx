@@ -30,7 +30,7 @@ export default function Osaps() {
             Aesthetic Plastic Surgery (ISAPS), held Asia&apos;s largest plastic
             surgery convention in July 2024. This event was hosted and organized
             by the Philippine Association of Plastic, Reconstructive, and
-            Aesthetic Surgeons (PAPRAS), the Philippines' leading plastic
+            Aesthetic Surgeons (PAPRAS), the Philippines&apos; leading plastic
             surgeon society. Drawing from past conference experiences, they
             aimed to streamline registration and payment processes. I developed
             a comprehensive website with an integrated payment gateway to
