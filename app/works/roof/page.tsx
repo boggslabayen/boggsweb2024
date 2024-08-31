@@ -62,7 +62,7 @@ export default function Roof() {
           <p className="leading-loose text-justify pb-8">
             Rather than jumping directly into logo design, I began by
             identifying the target markets. I conducted informal interviews to
-            uncover their motivations for visiting a lounge, bar, or café beyond
+            uncover their motivations for visiting a lounge, bar, or cafe beyond
             just functional reasons, as well as their overall experiences.
           </p>
 
@@ -123,7 +123,7 @@ export default function Roof() {
         <div>
           <p className="leading-loose text-justify pb-8">
             This clear brand positioning and personification inspired my
-            creativity as I moved forward with designing the brand's visual
+            creativity as I moved forward with designing the brand&apos;s visual
             identity.
           </p>
         </div>
