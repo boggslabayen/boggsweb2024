@@ -27,7 +27,7 @@ export default function Osaps() {
           <p className="leading-loose text-justify pb-8">
             The Oriental Society of Aesthetic Plastic Surgery (OSAPS), a key
             regional society recognized by the International Society of
-            Aesthetic Plastic Surgery (ISAPS), held Asia's largest plastic
+            Aesthetic Plastic Surgery (ISAPS), held Asia&apos;s largest plastic
             surgery convention in July 2024. This event was hosted and organized
             by the Philippine Association of Plastic, Reconstructive, and
             Aesthetic Surgeons (PAPRAS), the Philippines' leading plastic
