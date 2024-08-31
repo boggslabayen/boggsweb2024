@@ -14,7 +14,7 @@ export default function Home() {
           <h1
             className={`${quickSand.className} max-w-screen text-2xl md:text-7xl font-light leading-tight text-center`}
           >
-            Hello I&apos;m <span className="font-black">Boggs</span>, <br /> a
+            Hello I&apos;m <span className="font-black">Jose</span>, <br /> a
             product
             <span className="font-bold"> designer</span>
           </h1>
