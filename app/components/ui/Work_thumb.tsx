@@ -22,7 +22,7 @@ const projectCards = [
     image: "/project_assets/mcormmick.png",
     projectTitle: "McCormick Culinary Philippines",
     projectDescription: "E-commerce platform specially designed for chefs.",
-    link: "/pasahero",
+    link: "/mccormmick",
   },
   {
     id: 4,
