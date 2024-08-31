@@ -38,7 +38,7 @@ const projectCards = [
     projectTitle: "OSAPS 2024",
     projectDescription:
       "Branding and Digital Initiatives for Oriental Society of Plastic Surgeons",
-    link: "/pasahero",
+    link: "/osaps",
   },
   {
     id: 6,

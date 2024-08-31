@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Hcapp() {
+export default function Osaps() {
   return (
     <>
       {/* Header Image */}
@@ -16,7 +16,7 @@ export default function Hcapp() {
       {/* Title */}
       <div className="py-8 max-w-screen-lg mx-auto px-8">
         <h3 className="font-bold md:text-3xl text-xl">
-          Home Credit Philippines App
+          Home Credit Philippines Mobile App
         </h3>
       </div>
 
