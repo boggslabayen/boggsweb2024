@@ -49,7 +49,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1  font-medium hover:font-bold hover:text-amber-500"
       >
-        <a href="#" className="flex items-center">
+        <a href="/contact" className="flex items-center">
           Contact
         </a>
       </Typography>

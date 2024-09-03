@@ -60,7 +60,7 @@ function createWorkCards(workCards) {
       </div>
 
       <div>
-        <p className="font-bold h-10">{workCards.role}</p>
+        <p className="font-bold md:h-10">{workCards.role}</p>
         <p>{workCards.company}</p>
       </div>
     </div>
