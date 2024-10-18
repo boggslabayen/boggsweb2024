@@ -49,7 +49,7 @@ export default function Contact() {
           name="number"
           required
           className="bg-blue-gray-50 p-4 rounded-md mt-4"
-          placeholder="437-987-90-87"
+          placeholder="437-232-12-12"
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
         />
       </div>
